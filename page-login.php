@@ -15,7 +15,7 @@ if (is_user_logged_in()) {
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div id="page" class="hfeed site">
     <header class="post-img-full page-img-header" data-type="background" data-speed="10"
-        style="background: url('<?php echo get_the_post_thumbnail_url(); ?>');">
+        style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
         <div class="pattern-color"></div>
         <div class="container text-center">
             <div class="page-name-wrap">

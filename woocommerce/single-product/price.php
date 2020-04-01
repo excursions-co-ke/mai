@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Ticket Price
+ * Single Product Price
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product/price.php.
  *
@@ -22,4 +22,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) );?>"><?php echo $product->get_price_html(); ?></p>
+<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>

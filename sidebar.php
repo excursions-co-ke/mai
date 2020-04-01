@@ -10,12 +10,14 @@
 
 ?>
 <div id="secondary" class="widget-area col-md-4 col-sm-12 col-xs-12" role="complementary">
-    <aside id="newsletter-sc" class="hidden-xs newsletter-sticky" style="background: url('<?php echo get_template_directory_uri(); ?>/images/newsletter-back.jpg');">
+    <aside id="newsletter-sc" class="hidden-xs newsletter-sticky"
+        style="background: url('<?php echo get_template_directory_uri(); ?>/images/newsletter-back.jpg');">
         <h3 class="widget-title">Newsletter</h3>
         <div class="nwsletter-wrap">
             <div role="form" class="wpcf7" id="wpcf7-f117-o1" dir="ltr" lang="en-US">
                 <div class="screen-reader-response"></div>
-                <form action="/demo/iter/blog/return-home/#wpcf7-f117-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                <form action="/demo/iter/blog/return-home/#wpcf7-f117-o1" method="post" class="wpcf7-form"
+                    novalidate="novalidate">
                     <div style="display: none;">
                         <input type="hidden" name="_wpcf7" value="117">
                         <input type="hidden" name="_wpcf7_version" value="4.9.2">
@@ -25,11 +27,15 @@
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         <br>
-                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail*"></span>
+                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value=""
+                                size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                aria-required="true" aria-invalid="false" placeholder="E-mail*"></span>
                     </p>
                     <p>
                         <label class="input-btn">
-                            <input type="submit" value="Subscribe" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></label>
+                            <input type="submit" value="Subscribe" class="wpcf7-form-control wpcf7-submit"><span
+                                class="ajax-loader"></span></label>
                     </p>
                     <div class="wpcf7-response-output wpcf7-display-none"></div>
                 </form>
@@ -38,7 +44,7 @@
     </aside>
     <?php if ( is_active_sidebar( 'blog-side-bar' ) ) : ?>
     <?php dynamic_sidebar( 'blog-side-bar' ); ?>
-<?php endif; ?>
+    <?php endif; ?>
     <!-- <aside id="recent-posts-2" class="widget widget_recent_entries">
         <h3 class="widget-title">Recent Posts</h3>
         <ul>

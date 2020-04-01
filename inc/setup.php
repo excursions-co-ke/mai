@@ -83,6 +83,7 @@ function os_en_scripts()
 	wp_enqueue_style('hover-css', get_template_directory_uri() . '/css/assets/hover.min4c56.css', array(), OS_SITE_VER);
 	wp_enqueue_style('linear-icons-css', get_template_directory_uri() . '/css/assets/linear-icons.css', array(), OS_SITE_VER);
 	wp_enqueue_style('iter-gioga-travel-icons-css', get_template_directory_uri() . '/css/travel-icons.min.css', array(), OS_SITE_VER);
+	wp_enqueue_style('additional', get_template_directory_uri() . '/css/custom.css', array(), OS_SITE_VER);
 	wp_enqueue_style('style', get_stylesheet_uri());
 
 	//wp_enqueue_script( 'main', get_template_directory_uri() . '//assets/js/main.js', array (), OS_SITE_VER, true );
@@ -159,38 +160,38 @@ add_filter('get_the_archive_title', 'os_sanitize_archive_title');
 
 function os_subscribe_user_ajax()
 { ?>
-	<script id="ajax-registration" type="text/javascript">
-		jQuery(document).ready(function($) {
-			$('#os_subscribe_user_form').submit(function(e) {
-				e.preventDefault();
+<script id="ajax-registration" type="text/javascript">
+jQuery(document).ready(function($) {
+    $('#os_subscribe_user_form').submit(function(e) {
+        e.preventDefault();
 
-				var form = $(this);
+        var form = $(this);
 
-				$.post(form.attr('action'), form.serialize(), function(data) {
-					if (data.success) {
-						$('.form-success-clean').val("");
-						$('.form-success-invisible').addClass('invisible');
-						$('.form-success-gone').addClass('gone');
-						$('.form-success-visible').removeClass('invisible');
-						$('.form-success-visible').removeClass('gone');
-						$('.form-text-feedback').html(data.success);
-						console.log('Request sent successfully');
-					} else if (data.error) {
-						$('.form-text-feedback').removeClass('gone');
-						$('.form-text-feedback').removeClass('invisible');
-						$('.form-text-feedback').html(data.error);
-						console.log('Could not process AJAX request to server');
-					} else {
-						//Ajax connexion reject an error a success, now handle response
-						$('.form-text-feedback').removeClass('gone');
-						$('.form-text-feedback').removeClass('invisible');
-						$('.form-text-feedback').html('Could not process AJAX request to server');
-						console.log('Could not process AJAX request to server');
-					}
-				}, 'json');
-			});
-		});
-	</script>
+        $.post(form.attr('action'), form.serialize(), function(data) {
+            if (data.success) {
+                $('.form-success-clean').val("");
+                $('.form-success-invisible').addClass('invisible');
+                $('.form-success-gone').addClass('gone');
+                $('.form-success-visible').removeClass('invisible');
+                $('.form-success-visible').removeClass('gone');
+                $('.form-text-feedback').html(data.success);
+                console.log('Request sent successfully');
+            } else if (data.error) {
+                $('.form-text-feedback').removeClass('gone');
+                $('.form-text-feedback').removeClass('invisible');
+                $('.form-text-feedback').html(data.error);
+                console.log('Could not process AJAX request to server');
+            } else {
+                //Ajax connexion reject an error a success, now handle response
+                $('.form-text-feedback').removeClass('gone');
+                $('.form-text-feedback').removeClass('invisible');
+                $('.form-text-feedback').html('Could not process AJAX request to server');
+                console.log('Could not process AJAX request to server');
+            }
+        }, 'json');
+    });
+});
+</script>
 <?php
 }
 add_action('wp_footer', 'os_subscribe_user_ajax');

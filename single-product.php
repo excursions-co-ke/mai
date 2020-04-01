@@ -18,8 +18,12 @@
             <div class="page-name-wrap">
                 <div class="ggts-name">
                     <h1 class="page-title"><?php the_title(); ?></h1>
-                    <nav class="woocommerce-breadcrumb"><a
-                            href="<?php echo home_url('/'); ?>">Home</a>&nbsp;/&nbsp;<?php the_title(); ?></nav>
+                    <nav class="woocommerce-breadcrumb">
+                        <a href="<?php echo home_url('shop'); ?>">
+                            <?php _e('Tickets', 'woocommerce'); ?>
+                        </a>
+                        &nbsp;/&nbsp;<?php the_title(); ?>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -37,8 +41,7 @@
                                     <?php the_content(); ?>
                                 </div>
 
-                                <footer class="entry-footer">
-                                </footer>
+                                <footer class="entry-footer"></footer>
                             </div>
                         </div>
                     </main>
@@ -50,5 +53,6 @@
         </div>
     </div>
 </div>
-<?php endwhile; endif; ?>
+<?php endwhile;
+endif; ?>
 <?php get_footer(); ?>

@@ -373,3 +373,36 @@ if (class_exists('Wc_Product')) {
         }
     }
 }
+function wc_css()
+{
+    echo "
+	<style type='text/css'>
+	#excursion {
+		float: right;
+		padding: 30px 20px;
+		margin: 0;
+		font-size: 15px;
+		line-height: 1.6666;
+	}
+	.rtl #excursion {
+		float: left;
+	}
+	.block-editor-page #excursion {
+		display: none;
+	}
+	@media screen and (max-width: 782px) {
+		#excursion,
+		.rtl #excursion {
+			float: none;
+			padding-left: 0;
+			padding-right: 0;
+		}
+    }
+    .woocommerce-layout__header {
+        display: none !important;
+        visibility: hidden !important;
+    }
+	</style>
+	";
+}
+add_action('admin_head', 'wc_css');

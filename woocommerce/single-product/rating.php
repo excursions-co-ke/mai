@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Ticket Rating
+ * Single Product Rating
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product/rating.php.
  *

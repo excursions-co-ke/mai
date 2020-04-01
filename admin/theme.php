@@ -182,3 +182,9 @@ function clientside_init_errors()
 		add_action('all_admin_notices', array('Clientside_Error_Handler', 'action_output_php_errors'));
 	}
 }
+
+add_filter('screen_options_show_screen', '__return_false');
+add_filter('contextual_help', function($old, $id, $screen){
+	$screen->remove_help_tabs();
+	return $old;
+}, 999, 3);

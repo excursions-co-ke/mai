@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Ticket Thumbnails
+ * Single Product Thumbnails
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product/product-thumbnails.php.
  *

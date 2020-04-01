@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Ticket stock.
+ * Single Product stock.
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product/stock.php.
  *

@@ -21,416 +21,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
 
-    <style type="text/css" title="dynamic-css" class="options-output">
-        .gg-section.service-section {
-            background-color: #2f404c;
-        }
-
-        .gg-section.latest-posts {
-            background-color: #35b8ab;
-        }
-
-        .gg-section.testimonial {
-            background-color: #2f404c;
-        }
-
-        .gg-section.custom1 {
-            background-color: #2f404c;
-        }
-
-        .gg-section.custom2 {
-            background-color: #2f404c;
-        }
-
-        .gg-section.custom3 {
-            background-color: #2f404c;
-        }
-
-        body,
-        .single .info-tour-home,
-        #breadcrumbs {
-            font-family: Hind;
-            line-height: 26px;
-            font-weight: normal;
-            font-style: normal;
-            color: #323c46;
-            font-size: 16px;
-            opacity: 1;
-            visibility: visible;
-            -webkit-transition: opacity 0.24s ease-in-out;
-            -moz-transition: opacity 0.24s ease-in-out;
-            transition: opacity 0.24s ease-in-out;
-        }
-
-        .wf-loading body,
-        .single .info-tour-home,
-        #breadcrumbs,
-            {
-            opacity: 0;
-        }
-
-        .ie.wf-loading body,
-        .single .info-tour-home,
-        #breadcrumbs,
-            {
-            visibility: hidden;
-        }
-
-        #searchtours label,
-        .blog-filters li a,
-        .blog-post-title,
-        .btn,
-        .card .card-title,
-        .card .card-title a,
-        .counter,
-        .counter-sep,
-        .form-submit input[type=submit],
-        .ggts-name,
-        .info-t-post .cat-bl a,
-        .pricing-price,
-        .related-details h4,
-        .related-details h4 a,
-        .tour-details-sidebar strong,
-        .tour_list_desc h3,
-        .woocommerce #respond input#submit,
-        .woocommerce #respond input#submit.alt,
-        .woocommerce a.added_to_cart,
-        .woocommerce a.button,
-        .woocommerce a.button.alt,
-        .woocommerce button.button,
-        .woocommerce button.button.alt,
-        .woocommerce input.button,
-        .woocommerce input.button.alt,
-        .wpcf7-form input[type=submit],
-        a.bp-title,
-        a.btn,
-        a.simple-link,
-        button,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        input[type=submit],
-        .card-reveal ul strong {
-            font-family: Montserrat;
-            opacity: 1;
-            visibility: visible;
-            -webkit-transition: opacity 0.24s ease-in-out;
-            -moz-transition: opacity 0.24s ease-in-out;
-            transition: opacity 0.24s ease-in-out;
-        }
-
-        .wf-loading #searchtours label,
-        .blog-filters li a,
-        .blog-post-title,
-        .btn,
-        .card .card-title,
-        .card .card-title a,
-        .counter,
-        .counter-sep,
-        .form-submit input[type=submit],
-        .ggts-name,
-        .info-t-post .cat-bl a,
-        .pricing-price,
-        .related-details h4,
-        .related-details h4 a,
-        .tour-details-sidebar strong,
-        .tour_list_desc h3,
-        .woocommerce #respond input#submit,
-        .woocommerce #respond input#submit.alt,
-        .woocommerce a.added_to_cart,
-        .woocommerce a.button,
-        .woocommerce a.button.alt,
-        .woocommerce button.button,
-        .woocommerce button.button.alt,
-        .woocommerce input.button,
-        .woocommerce input.button.alt,
-        .wpcf7-form input[type=submit],
-        a.bp-title,
-        a.btn,
-        a.simple-link,
-        button,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        input[type=submit],
-        .card-reveal ul strong,
-            {
-            opacity: 0;
-        }
-
-        .ie.wf-loading #searchtours label,
-        .blog-filters li a,
-        .blog-post-title,
-        .btn,
-        .card .card-title,
-        .card .card-title a,
-        .counter,
-        .counter-sep,
-        .form-submit input[type=submit],
-        .ggts-name,
-        .info-t-post .cat-bl a,
-        .pricing-price,
-        .related-details h4,
-        .related-details h4 a,
-        .tour-details-sidebar strong,
-        .tour_list_desc h3,
-        .woocommerce #respond input#submit,
-        .woocommerce #respond input#submit.alt,
-        .woocommerce a.added_to_cart,
-        .woocommerce a.button,
-        .woocommerce a.button.alt,
-        .woocommerce button.button,
-        .woocommerce button.button.alt,
-        .woocommerce input.button,
-        .woocommerce input.button.alt,
-        .wpcf7-form input[type=submit],
-        a.bp-title,
-        a.btn,
-        a.simple-link,
-        button,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        input[type=submit],
-        .card-reveal ul strong,
-            {
-            visibility: hidden;
-        }
-
-        .gg-top-primary-nav .see-all a,
-        .btn-book,
-        button.btn-searchform,
-        .wpcf7-form input[type="submit"],
-        #commentform label:after,
-        #content .search-form label:after {
-            background: #35b8ab;
-        }
-
-        a,
-        a.simple-link,
-        a:focus,
-        a:active,
-        a:visited,
-        .gg-top-primary-nav .see-all a,
-        .overlay-menu a,
-        .tsdetails i,
-        .service-section i,
-        .cat-bl,
-        .stars span a:hover,
-        .info-t-post .cat-bl a,
-        .contacts-box i,
-        .woocommerce ins .amount,
-        ul.list-sc li:before,
-        .card-details span:not(.card-date),
-        ol>li:before {
-            color: #35b8ab;
-        }
-
-        blockquote,
-        .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
-        .input_label::after,
-        .pagination span.current,
-        .input_label::after,
-        #content .search-form input[type="search"]:focus,
-        .woocommerce input:not([type="submit"]):hover,
-        .woocommerce textarea:hover,
-        .woocommerce nav.woocommerce-pagination ul li:first-child,
-        .woocommerce nav.woocommerce-pagination ul li:first-child:hover,
-        .hvr-reveal:before,
-        .post-previous:hover,
-        .post-next:hover {
-            border-color: #35b8ab;
-        }
-
-        .ggts-nav-trigger,
-        .ggts-tour-trigger,
-        .search-btn,
-        .scrollup,
-        .page-links>span,
-        .form-submit input[type="submit"],
-        .btn,
-        .quote-post-container,
-        .link-post-container,
-        .post-password-form .input-btn,
-        .pagination span.current,
-        .woocommerce a.button.alt,
-        .woocommerce button.button.alt,
-        .woocommerce input.button.alt,
-        .woocommerce nav.woocommerce-pagination ul li span.current,
-        .woocommerce #respond input#submit,
-        .woocommerce a.button,
-        .woocommerce button.button,
-        .woocommerce input.button,
-        .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
-        .bootstrap-datetimepicker-widget table td.active,
-        .open-color,
-        .tabcordion .nav-tabs>li.active>a,
-        .tabcordion .nav-tabs>li.active>a:focus,
-        .tabcordion .nav-tabs>li.active>a:hover,
-        .active .accordion-heading,
-        .panel-heading.open-color,
-        .panel-default:first-child .panel-heading {
-            background-color: #35b8ab;
-        }
-
-        .tagcloud a:before,
-        .hvr-underline-from-center:before,
-        .btn:active,
-        .btn-book:active,
-        button.btn-searchform:active,
-        .gg-top-nav-trigger span:hover,
-        .gg-top-nav-trigger span:hover::before,
-        .gg-top-nav-trigger span:hover::after,
-        .gg-top-nav-trigger.nav-is-visible span:hover::before,
-        .gg-top-nav-trigger.nav-is-visible span:hover::after,
-        .nav-is-visible .gg-top-search-trigger:hover::after,
-        .gg-top-search-trigger span:hover::before,
-        .gg-top-search-trigger span:hover::after {
-            background: #2a9388;
-        }
-
-        .search-btn:hover,
-        .ggts-nav-trigger:hover,
-        .page-links>span:hover,
-        .ggts-tour-trigger:hover,
-        .pagination a:hover,
-        .page-links a:hover,
-        .post-labels .postformat.active,
-        .woocommerce nav.woocommerce-pagination ul li a:focus,
-        .woocommerce nav.woocommerce-pagination ul li a:hover,
-        .form-submit input[type="submit"]:hover,
-        .btn:hover,
-        .btn-book:hover,
-        .scrollup:hover,
-        .btn-large:hover,
-        button.btn-searchform:hover,
-        .post-password-form .input-btn:hover,
-        .bootstrap-datetimepicker-widget table td.active:hover,
-        .bootstrap-datetimepicker-widget table td span.active,
-        .wpcf7-form input[type="submit"]:hover,
-        #searchsubmit:hover,
-        .woocommerce a.button.alt:hover,
-        .woocommerce button.button.alt:hover,
-        .woocommerce input.button.alt:hover,
-        .woocommerce #respond input#submit:hover,
-        .woocommerce a.button:hover,
-        .woocommerce button.button:hover,
-        .woocommerce input.button:hover,
-        #secondary .button:hover,
-        .woocommerce ul.products li.product .button:hover,
-        .woocommerce a.added_to_cart:hover {
-            background-color: #2a9388;
-        }
-
-        #top-menu a:hover,
-        .site-footer aside a:hover,
-        a:hover,
-        .small-header a:hover,
-        .post-search .entry-title a:hover,
-        #content .search-form input[type="submit"]:hover,
-        #secondary a:hover,
-        .cart_item a:hover,
-        .entry-footer span a:hover,
-        .woocommerce-product-search input[type="submit"]:hover,
-        .gg-top-primary-nav a:hover,
-        .gg-top-primary-nav ul a:hover,
-        .gg-top-primary-nav.nav-is-visible a:visited:hover,
-        .black-menuopen-items #top-menu a:hover,
-        .footer-social-nav li a:hover {
-            color: #2a9388;
-        }
-
-        .btn.black:hover,
-        .btn.transparent:hover,
-        .nav-is-visible .gg-top-search-trigger:hover::before,
-        #searchsubmit:hover,
-        #secondary .button:hover,
-        .woocommerce ul.products li.product .button:hover,
-        .woocommerce a.added_to_cart:hover {
-            border-color: #2a9388;
-        }
-
-        #loadIcon {
-            background-color: #edb100;
-        }
-
-        .small-header {
-            background-color: #25333c;
-        }
-
-        .gg-top-main-header,
-        .ggts-header.gg-header,
-        .header-nav {
-            background-color: #ffffff;
-        }
-
-        .home.blog .gg-top-main-header,
-        .home.blog .ggts-header.gg-header,
-        .home.blog .header-nav {
-            background-color: transparent;
-        }
-
-        .ggts-primary-nav,
-        .overlay-navigation.open,
-        .gg-top-primary-nav.nav-is-visible,
-        .gg-top-primary-nav.nav-is-visible ul,
-        .ggts-primary-nav ul {
-            background-color: #253031;
-        }
-
-        .gg-top-primary-nav a,
-        .gg-top-primary-nav ul a,
-        .overlay-navigation form input[type="search"] {
-            border-color: #2d3b3c;
-        }
-
-        .site-footer {
-            background-color: #2a3944;
-        }
-
-        footer .widget ul li {
-            border-bottom-color: #43535d;
-        }
-
-        footer .table-bordered>tbody>tr>td,
-        footer .table-bordered>tbody>tr>th,
-        footer .table-bordered>tfoot>tr>td,
-        footer .table-bordered>tfoot>tr>th,
-        footer .table-bordered>thead>tr>td,
-        footer .table-bordered>thead>tr>th,
-        footer .table>caption+thead>tr:first-child>td,
-        footer .table>caption+thead>tr:first-child>th,
-        footer .table>colgroup+thead>tr:first-child>td,
-        footer .table>colgroup+thead>tr:first-child>th,
-        footer .table>thead:first-child>tr:first-child>td,
-        footer .table>thead:first-child>tr:first-child>th {
-            border-color: #43535d;
-        }
-
-        footer .widget_categories ul li.cat-item-has-children ul.children,
-        footer .widget_pages ul li.page_item_has_children ul.children,
-        footer .widget_nav_menu ul li.menu-item-has-children ul.sub-menu {
-            border-top-color: #43535d;
-        }
-
-        .last-footer {
-            background-color: #25333c;
-        }
-    </style>
-
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class();
+    ?>>
     <h1 class="hide"><?php bloginfo('name') ?></h1>
     <div id="loadIcon">
         <div id="load-center">
@@ -439,60 +34,56 @@
             <div></div>
             <div></div>
         </div>
-    </div>
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <a href="#" title="Scroll Back to Top" class="scrollup"><i class="top-scroll fa fa-angle-double-up"></i></a>
+    </div><a class="skip-link screen-reader-text" href="#content">Skip to content</a><a href="#"
+        title="Scroll Back to Top" class="scrollup"><i class="top-scroll fa fa-angle-double-up"></i></a>
     <div id="header-grp" class="<?php echo is_home() ? 'yes-topbar fixed-small-dv' : 'fixed-small-dv'; ?>">
         <header class="small-header hide-502">
             <div class="container">
                 <ul class="social-links">
-                    <li><a target="_blank" href="<?php os_theme_mod('os_twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="<?php os_theme_mod('os_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="<?php os_theme_mod('os_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="<?php os_theme_mod('os_youtube'); ?>"><i class="fa fa-youtube-play"></i></a></li>
-                </ul>
-                <span class="contact-info">
-                    <span class="pull-right"><i class="lnr lnr-phone-handset"></i> <a href="tel:<?php os_theme_mod('phone', '254705459494'); ?>"><?php os_theme_mod('phone', '254705459494'); ?></a></span>
-                    <span class="pull-right"><i class="lnr lnr-envelope"> </i><a href="mailto:<?php os_theme_mod('email', 'twende@excursions.co.ke'); ?>"><?php os_theme_mod('email', 'twende@excursions.co.ke'); ?></a></span>
-                </span>
+                    <li><a target="_blank" href="<?php os_theme_mod('os_twitter'); ?>"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" href="<?php os_theme_mod('os_facebook'); ?>"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="<?php os_theme_mod('os_instagram'); ?>"><i
+                                class="fa fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="<?php os_theme_mod('os_youtube'); ?>"><i
+                                class="fa fa-youtube-play"></i></a></li>
+                </ul><span class="contact-info"><span class="pull-right"><i class="lnr lnr-phone-handset"></i><a
+                            href="tel:<?php os_theme_mod('phone', '254705459494'); ?>"><?php os_theme_mod('phone', '254705459494');
+    ?></a></span><span class="pull-right"><i class="lnr lnr-envelope"></i><a
+                            href="mailto:<?php os_theme_mod('email', 'twende@excursions.co.ke'); ?>"><?php os_theme_mod('email', 'twende@excursions.co.ke');
+    ?></a></span></span>
             </div>
         </header>
         <header id="masthead" class="site-header">
             <div class="header-nav <?php echo is_home() ? 'color-phones' : ''; ?>">
-                <div class="gg-top-main-header container <?php echo is_home() ? 'white-menu-items' : ''; ?>">
-                    <a class="gg-top-logo homelogo" href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name') ?>" rel="home">
-                        <?php $custom_logo_id = get_theme_mod('custom_logo');
-                        $image = wp_get_attachment_image_src($custom_logo_id, 'full'); ?>
-                        <img src="<?php echo $image[0]; ?>" alt="<?php bloginfo('name') ?>">
-                    </a>
-                    <nav class="gg-top-nav">
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'menu'              => 'Header',
-                                'container'         => 'ul',
-                                'container_class'   => 'gg-top-primary-nav is-fixed',
-                                'container_id'      => '',
-                                'menu_class'        => 'gg-top-primary-nav is-fixed',
-                                'menu_id'           => 'top-menu',
-                                'echo'              => true,
-                                'fallback_cb'       => 'wp_page_menu',
-                                'before'            => '',
-                                'after'             => '',
-                                'link_before'       => '',
-                                'link_after'        => '',
-                                'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                'theme_location'    => 'header'
-                            )
-                        );
-                        ?>
-                        <script type="text/javascript">
-                            // jQuery(document).ready(function($) {
-                            //     $(".menu-item").addClass("nav-item");
-                            //     $(".menu-item a").addClass("nav-link");
-                            //     $(".current-menu-item").addClass('active');
-                            //     $(".current-menu-item a").addClass('active');
-                            // });
+                <div class="gg-top-main-header container <?php echo is_home() ? 'white-menu-items' : ''; ?>"><a
+                        class="gg-top-logo homelogo" href="<?php echo home_url('/'); ?>"
+                        title="<?php bloginfo('name') ?>" rel="home"><?php $custom_logo_id=get_theme_mod('custom_logo');
+    $image=wp_get_attachment_image_src($custom_logo_id, 'full');
+    ?><img src="<?php echo $image[0]; ?>" alt="<?php bloginfo('name') ?>"></a>
+                    <nav class="gg-top-nav"><?php wp_nav_menu(array('menu'=> 'Header',
+            'container'=> 'ul',
+            'container_class'=> 'gg-top-primary-nav is-fixed',
+            'container_id'=> '',
+            'menu_class'=> 'gg-top-primary-nav is-fixed',
+            'menu_id'=> 'top-menu',
+            'echo'=> true,
+            'fallback_cb'=> 'wp_page_menu',
+            'before'=> '',
+            'after'=> '',
+            'link_before'=> '',
+            'link_after'=> '',
+            'items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'theme_location'=> 'header'
+        ));
+    ?><script type="text/javascript">
+                        // jQuery(document).ready(function($) {
+                        //     $(".menu-item").addClass("nav-item");
+                        //     $(".menu-item a").addClass("nav-link");
+                        //     $(".current-menu-item").addClass('active');
+                        //     $(".current-menu-item a").addClass('active');
+                        // });
                         </script>
                     </nav>
                     <ul class="gg-top-header-buttons">
@@ -501,8 +92,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="gg-top-search topbar-yes">
-                <?php get_search_form(); ?>
-            </div>
+            <div class="gg-top-search topbar-yes"><?php get_search_form();
+    ?></div>
         </header>
     </div>

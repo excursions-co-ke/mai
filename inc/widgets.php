@@ -23,7 +23,7 @@ function os_shop_sidebar()
             'name' => __('Shop', 'iter'),
             'id' => 'shop-side-bar',
             'description' => __('Shop Sidebar', 'iter'),
-            'before_widget' => '<aside class="widget">',
+            'before_widget' => '<aside class="widget woocommerce">',
             'after_widget' => "</aside>",
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',

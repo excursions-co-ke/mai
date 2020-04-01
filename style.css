@@ -1,5 +1,5 @@
 /*
-	Theme Name: Mai
+	Theme Name: Ella Mai
 	Theme URI: https://wp.excusions.co.ke/themes/mai
 	Author: Excursions Kenya
 	Author URI: https://excusions.co.ke/
@@ -184,8 +184,7 @@ body {
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 	overflow-x: hidden;
 }
@@ -371,7 +370,7 @@ i {
 }
 blockquote {
     margin: 1.5em;
-    border-left: 5px solid #ffdeb7;
+    border-left: 5px solid orange;
 	line-height: 3rem;
 }
 .quote-post-container blockquote {
@@ -836,17 +835,17 @@ a,
 .service-section i,
 .entry-footer span a:hover,
 .cat-bl {
-    color: #ffdeb7;
+    color: orange;
 }
 .hvr-reveal:before {
-	border-color: #ffdeb7;
+	border-color: orange;
 }
 ::-moz-selection {
-	background: #ffdeb7;
+	background: orange;
 	color: #fff;
 }
 ::selection {
-	background: #ffdeb7;
+	background: orange;
 	color: #fff;
 }
 .input_label::after {
@@ -865,7 +864,7 @@ button.btn-searchform,
 .nav-is-visible .gg-top-search-trigger:hover::after,
 .gg-top-search-trigger span:hover::before,
 .gg-top-search-trigger span:hover::after {
-    background: #ffdeb7;
+    background: orange;
 }
 .form-submit input[type="submit"],
 .btn,
@@ -889,7 +888,7 @@ button.btn-searchform,
 .ggts-tour-trigger,
 .search-btn,
 .post-password-form .input-btn{
-    background-color: #ffdeb7;
+    background-color: orange;
 }
 .img-post,
 .link-post-container,
@@ -897,7 +896,7 @@ button.btn-searchform,
     border-radius: 0;
 }
 .nav-is-visible .gg-top-search-trigger:hover::before {
-    border: 3px solid #ffdeb7;
+    border: 3px solid orange;
 }
 .form-submit input[type="submit"]:hover,
 .btn:hover,
@@ -921,13 +920,13 @@ button.btn-searchform:hover,
 #secondary .button:hover,
 .woocommerce ul.products li.product .button:hover,
 .post-password-form .input-btn:hover{
-    background-color: #ffdeb7;
+    background-color: orange;
 }
 .woocommerce-product-search input[type='submit']:hover {
-    color: #ffdeb7;
+    color: orange;
 }
 #secondary .button:hover{
-    border: 1px solid #ffdeb7;
+    border: 1px solid orange;
 }
 a:hover,
 a:focus,
@@ -1776,7 +1775,7 @@ footer .gg-textarea .input_label::after {
     bottom: calc(100% - 60px);
 }
 .input_label::after {
-    border-bottom: 2px solid #ffdeb7;
+    border-bottom: 2px solid orange;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     -webkit-transition: -webkit-transform 0.3s;
@@ -1904,7 +1903,7 @@ aside .search-form input[type="search"] {
     border-bottom: 2px solid transparent;
 }
 #content .search-form input[type="search"]:focus {
-    border-bottom: 2px solid #ffdeb7;
+    border-bottom: 2px solid orange;
 }
 #content .search-form label {
     display: inline-block;
@@ -1918,7 +1917,7 @@ aside .search-form input[type="search"] {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #ffdeb7;
+    background: orange;
     height: 2px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -4320,7 +4319,7 @@ p:not(.heading-subtitle).section-text-black {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background-color: #35b8ab;
+    background-color: gray;
 }
 .under-slogan .flexslider {
     height: 100%;
@@ -5250,7 +5249,7 @@ footer ul {
 .woocommerce p.stars a:hover:before,
 .woocommerce p.stars a,
 .woocommerce p.stars a:hover{
-    color: #ffdeb7;
+    color: orange;
 }
 .woocommerce table.shop_table td {
     padding: 15px;
@@ -5557,7 +5556,7 @@ img.activator:hover {
 }
 .woocommerce input:not([type='submit']):hover,
 .woocommerce textarea:hover {
-    border-bottom: 2px solid #ffdeb7;
+    border-bottom: 2px solid orange;
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: 0.3s;
